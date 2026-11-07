@@ -39,13 +39,27 @@ It runs in the terminal, stores student grades, calculates averages, and prints 
 
 4. Enter the number of students, followed by each student's name and three integer scores.
 
-### Important: Current Demo Setup
+## Important: Update the Placeholder Names Before Running
 
-The script currently includes example calls that look up students named `aarav` and `alice`.
+Some example function calls use `NAME` as a placeholder. Before running the script, replace these placeholders with the actual student names you plan to enter.
 
-To run the current version without a missing-name error, enter at least two students and include those exact lowercase names. Alternatively, edit the example calls to match the names you enter.
+For example, change:
 
-The script also adds a sample student named `bob` automatically.
+```python
+display_students(NAME)
+```
+
+to:
+
+```python
+display_students("alice")
+```
+
+Then make sure you enter `alice` when the program asks for student names.
+
+Names must match exactly, including capitalization. If an example call looks up a name that you haven't entered, the program will stop with a `KeyError`.
+
+Check every example student lookup, not just `display_students()`. You can use different names in different calls, as long as those students exist in the data you entered.
 
 ## Example Student Report
 
